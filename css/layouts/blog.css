@@ -75,9 +75,9 @@ h3 {
     text-decoration: none;
 }
 .profile-img {
-    height: 150px;
-    border-radius: 50%;
-    margin: 15%;    
+    height: 15em;
+    border-radius: 25%;
+    margin: 20% 0 0 10em;    
 }
 
 .content-subhead {
@@ -159,8 +159,8 @@ h3 {
 .footer .pure-menu a:focus {
     background: none;
 }
-.social-media-icons {
-    
+.fab {
+    margin: 0.2em;  
 }
 
 @media (min-width: 48em) {
@@ -170,7 +170,7 @@ h3 {
     }
 
     .header {
-        margin: 80% 2em 0;
+        margin: 10% 2em 0;
         text-align: right;
     }
 
