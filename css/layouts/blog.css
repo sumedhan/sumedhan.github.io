@@ -93,6 +93,9 @@ h3 {
 .content {
     padding: 2em 1em 0;
 }
+.posts {
+    height: 100%;
+}
 
 .post {
     padding-bottom: 2em;
@@ -141,6 +144,7 @@ h3 {
 .post-images {
     margin: 1em 0;
 }
+
 .post-image-meta {
     margin-top: -3.5em;
     margin-left: 1em;
