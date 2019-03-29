@@ -13,8 +13,6 @@
     <!--[if gt IE 8]><!-->
         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
     <!--<![endif]-->
-    
-    
         <!--[if lte IE 8]>
             <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
         <![endif]-->
@@ -23,138 +21,170 @@
         <!--<![endif]-->
 </head>
 <body>
-  <div id="layout" class="pure-g">
-    <div class="sidebar pure-u-1 pure-u-md-1-4">
-      <img src="img/me.jpeg" alt="sumedha-headshot" class="pure-img-responsive profile-img">
-      <div class="header">
-        <h1 class="brand-title">Sumedha Narayanan</h1>
-        <h2 class="brand-tagline">Full Stack Web Developer</h2>
-        <div class="social-media-icons">
-          <a href="https://www.linkedin.com/in/sumedhan/" target="_blank"><span class="fab fa-linkedin fa-lg"></span></a>
-          <a href="https://github.com/sumedhan" target="_blank"><span class="fab fa-github fa-lg"></span></a>
-          <a href="mailto:sumedhanarayanan@gmail.com"><span class="fas fa-envelope fa-lg"></span></a>
+    <div id="layout" class="pure-g">
+        <!-- SideBar -->
+        <div class="sidebar pure-u-1 pure-u-md-1-4">
+            <img src="img/me.jpg" alt="sumedha-headshot" class="pure-img-responsive profile-img">
+            <div class="header">
+                <h1 class="brand-title">Sumedha Narayanan</h1>
+                <h2 class="brand-tagline">Full Stack Web Developer</h2>
+                <div class="social-media-icons">
+                <a href="https://www.linkedin.com/in/sumedhan/" target="_blank"><span class="fab fa-linkedin fa-lg"></span></a>
+                <a href="https://github.com/sumedhan" target="_blank"><span class="fab fa-github fa-lg"></span></a>
+                <a href="mailto:sumedhanarayanan@gmail.com"><span class="fas fa-envelope fa-lg"></span></a>
+                </div>
+                <div class="external-links">
+                <a href="https://resume.creddle.io/resume/g8ss96iceba" target="_blank">Resume</a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="pure-button" href="#about-me">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="pure-button" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="pure-button" href="#beyond-coding">Beyond Coding</a>
+                        </li>
+                    </ul>
+                </nav>    
+            </div>
         </div>
-        <div class="external-links">
-          <a href="https://resume.creddle.io/resume/g8ss96iceba" target="_blank">Resume</a>
-        </div>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a class="pure-button" href="#about-me">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="pure-button" href="#beyond-coding">Beyond Coding</a>
-                </li>
-            </ul>
-        </nav>    
-      </div>
-    </div>
+
+
+    <!-- content for posts-->
     <div class="content pure-u-1 pure-u-md-3-4">
-      <div>
-          <!-- A wrapper for all the blog posts -->
-          <div class="posts">
-              <h1 class="post-title" id="about-me">HR to Web Development</h1>
-              <!-- A single blog post -->
-              <section class="post">
-                  <header class="post-header">
-                      <h6 class="content-subhead">How I became a developer</h6>
-                  </header>
-                  <div class="post-description">
-                      <p>
-                          After spending five years defining the HR agenda for unionized workforce in factories and warehouses,  I knew I wanted a change. I craved solving analytical problems and learning something new. I had learnt C++ in my undergraduate Mechanical engineering classes and I wanted to explore other technologies. I started with some beginner workshops and online courses and I knew this was the career path I wanted to follow. 
-                      </p>
-                      <p>
-                          A few months later, I quit my job and signed up for Lighthouse Labs' immersive web development <a href="https://www.lighthouselabs.ca/web-bootcamp" target="_blank">program.</a>
-                      </p>
-                  </div>
-                  <header class="post-header">
-                      <h3 class="content-subhead">My Bootcamp Experience</h3>
-                  </header>
-                  <div class="post-description">
-                      <p>
-                          The Web-dev bootcamp was one of the most intense and exciting 10 weeks of my life. I learnt many different languages and frameworks during my program:
-                      </p>
-                        <ul>
-                            <li>Languages: JS, HTML, CSS, Ruby</li>
-                            <li>Systems & Databases: Git, PostgreSQL, mongoDB</li>
-                            <li>Frameworks & Libraries: Ruby on Rails, jQuery, Bootstrap, ejs, Express.js, ReactJS, Ajax, SASS, knex</li>
-                        </ul>
-                <p>But I believe that the most important skill I learnt was to be a life long learner.</p>                  
-                  </div>
-                  <header class="post-header">
+        <!-- About Me post -->
+        <div class="posts">
+            <h1 class="post-title" id="about-me">HR to Web Development</h1>
+            <section class="post">
+                <!-- Sub-post How I became a developer -->
+                <header class="post-header">
+                    <h6 class="content-subhead">How I became a developer</h6>
+                </header>
+                <div class="post-description">
+                    <p>
+                        After spending five years defining the HR agenda for unionized workforce in factories and warehouses,  I knew I wanted a change. I craved solving analytical problems and learning something new. I had learnt C++ in my undergraduate Mechanical engineering classes and I wanted to explore other technologies. I started with some beginner workshops and online courses and I knew this was the career path I wanted to follow. 
+                    </p>
+                    <p>
+                        A few months later, I quit my job and signed up for Lighthouse Labs' immersive web development <a href="https://www.lighthouselabs.ca/web-bootcamp" target="_blank">program.</a>
+                    </p>
+                </div>
+            </section>
+
+            <section class="post">
+                <!-- sub-post Bootcamp experience-->
+                <header class="post-header">
+                    <h3 class="content-subhead">My Bootcamp Experience</h3>
+                </header>
+                <div class="post-description">
+                    <p>The Web-dev bootcamp was one of the most intense and exciting 10 weeks of my life. I learnt many different languages and frameworks during my program:</p>
+                    <ul>
+                        <li>Languages: JS, HTML, CSS, Ruby</li>
+                        <li>Systems & Databases: Git, PostgreSQL, mongoDB</li>
+                        <li>Frameworks & Libraries: Ruby on Rails, jQuery, Bootstrap, ejs, Express.js, ReactJS, Ajax, SASS, knex</li>
+                    </ul>
+                    <p>But I believe that the most important skill I learnt was to be a life long learner.</p>                  
+                </div>
+            </section>
+            
+            <section class="post">
+                <!-- subpost past career highlights-->
+                <header class="post-header">
                     <h3 class="content-subhead">Past Career Highlights</h3>
                 </header>
                 <div class="post-description">
                     <p>I have had the good fortune to work with great employers like Amazon and Unilever in very different work environments. Some highlights from my career:</p>
-                      <ul>
+                    <ul>
                         <li>Analyzed weekly attrition trends with MicroStrategy data visualization tools and presented findings to Amazon's leadership team</li>
                         <li>Led a diversity and inclusion change initiative in Supply Chain function for Unilever</li>
                         <li>Designed a digital marketing campaign for Unilever's career re-entry framework for women on a career break</li>
-                      </ul>                
+                    </ul>                
                 </div>
-              </section>
-              </div>
-              <div class="posts">
-                  <h1 class="post-title" id="beyond-coding">Beyond Coding</h1>
-                  <!-- A single blog post -->
-                  <section class="post">
-                      <header class="post-header">
-                          <h6 class="content-subhead">Travelling</h6>
-                      </header>
-                      <div class="post-description">
-                          <div class="post-images pure-g">
-                              <div class="pure-u-1 pure-u-md-1-2 post-img">
-                                    <img alt="Masai Mara, Kenya"
-                                           class="pure-img-responsive"
-                                           src="img/kenya.JPG">
-                                  <div class="post-image-meta">
-                                      <h3>With my family at Masai Mara, Kenya</h3>
-                                  </div>
-                              </div>
-  
-                              <div class="pure-u-1 pure-u-md-1-2 post-img">
-                                      <img alt="Driving around Havana, Cuba"
-                                           class="pure-img-responsive"
-                                           src="img/havana.JPG">
-                                  <div class="post-image-meta">
-                                      <h3>Driving around Havana, Cuba</h3>
-                                  </div>
-                              </div>
-                          </div>
-                          <p>
-                            I love exploring new places, cultures and cuisines. Most of my free time is spent either travelling or planning my next trip. I have travelled to 20 countries and have lived in 11 different cities across three countries. I was introduced to travelling very young by my parents who took us on some very fun and exciting vacations every year.
-                          </p>
-                          <p>
-                             My passion for travelling inspired me to develop <a href="https://github.com/sumedhan/smoothplanner" target="_blank">Smooth Planner</a>, a travel planning app built on React and Rails. The app is built for those of us who enjoy trip planning and researching as much as the actual vacation.
-                          </p>
-                      </div>
-                      
-                      </div>
-                  </section>
-                  <section class="post">
-                        <header class="post-header">
-                            <h6 class="content-subhead">Food</h6>
-                        </header>
-                        <div class="post-description">
-                            <p>
-                              I am always looking for a new recipe or restaurant to try out! Let me know if you have any good recommendations!
-                            </p>
-                        </div>
-                        
-                        </div>
-                    </section>
-                  </div>
-          </div>
+            </section>
         </div>
-  </div>
-</div>
-<div class="footer">
-        <div class="pure-menu pure-menu-horizontal">
-            <ul>
-                <li class="pure-menu-item"><a href="mailto:sumedhanarayanan@gmail.com" class="pure-menu-link">Contact me</a></li>
-                <li class="pure-menu-item"><a href="https://www.linkedin.com/in/sumedhan/" class="pure-menu-link">Linkedin</a></li>
-                <li class="pure-menu-item"><a href="https://github.com/sumedhan" class="pure-menu-link">GitHub</a></li>
-            </ul>
+
+        <!-- Projects Post -->
+        <div class="posts">
+            <h1 class="post-title" id="projects">Projects</h1>
+            <!---->
+            <section class="post">
+                <header class="post-header">
+                    <h6 class="content-subhead"></h6>
+                </header>
+                <div class="post-description">
+                    <table class="pure-table pure-table-bordered pure-table-horizontal">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Tech-Stack</th>
+                                <th>Summary</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="https://github.com/sumedhan/smoothplanner" target="_blank">Smooth Planner</a></td>
+                                <td>React, React-router, Google Places API, Rails API, PostgreSQL</td>
+                                <td>Worked on a 3 member team to develop a full stack app that helps users organize their vacation. Learnt to use React Router, work with Rails as an API, work with Google places API.</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+
+        <!-- Beyond Coding Post -->
+        <div class="posts">
+            <h1 class="post-title" id="beyond-coding">Beyond Coding</h1>
+            <!--Travelling-->
+            <section class="post">
+                <header class="post-header">
+                    <h6 class="content-subhead">Travelling</h6>
+                </header>
+                <div class="post-description">
+                    <div class="post-images pure-g">
+                        <div class="pure-u-1 pure-u-md-1-2 post-img">
+                            <img alt="Masai Mara, Kenya" class="pure-img-responsive" src="img/kenya.JPG">
+                            <div class="post-image-meta">
+                                <h3>With my family at Masai Mara, Kenya</h3>
+                            </div>
+                        </div>
+
+                        <div class="pure-u-1 pure-u-md-1-2 post-img">
+                            <img alt="Driving around Havana, Cuba" class="pure-img-responsive" src="img/havana.JPG">
+                                <div class="post-image-meta">
+                                    <h3>Driving around Havana, Cuba</h3>
+                                </div>
+                        </div>
+                    </div>
+                    <p>
+                        I love exploring new places, cultures and cuisines. Most of my free time is spent either travelling or planning my next trip. I have travelled to 20 countries and have lived in 11 different cities across three countries. I was introduced to travelling very young by my parents who took us on some very fun and exciting vacations every year.
+                    </p>
+                    <p>
+                        My passion for travelling inspired me to develop <a href="https://github.com/sumedhan/smoothplanner" target="_blank">Smooth Planner</a>, a travel planning app built on React and Rails. The app is built for those of us who enjoy trip planning and researching as much as the actual vacation.
+                    </p>
+                </div>
+            </section>
+            <section class="post">
+                <header class="post-header">
+                    <h6 class="content-subhead">Food</h6>
+                </header>
+                <div class="post-description">
+                    <p>I am always looking for a new recipe or restaurant to try out! Let me know if you have any good recommendations!</p>
+                </div>
+            </section>
+        </div>
+    
+        <!-- Footer -->
+        <div class="footer">
+            <div class="pure-menu pure-menu-horizontal">
+                <ul>
+                    <li class="pure-menu-item"><a href="mailto:sumedhanarayanan@gmail.com" class="pure-menu-link">Contact me</a></li>
+                    <li class="pure-menu-item"><a href="https://www.linkedin.com/in/sumedhan/" class="pure-menu-link">Linkedin</a></li>
+                    <li class="pure-menu-item"><a href="https://github.com/sumedhan" class="pure-menu-link">GitHub</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
