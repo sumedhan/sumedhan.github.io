@@ -6,6 +6,8 @@
     <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
     <title>Sumedha Narayanan</title>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
@@ -24,8 +26,8 @@
     <div id="layout" class="pure-g">
         <!-- SideBar -->
         <div class="sidebar pure-u-1 pure-u-md-1-4">
-            <img src="img/me.jpg" alt="sumedha-headshot" class="pure-img-responsive profile-img">
             <div class="header">
+                <img src="img/me.jpg" alt="sumedha-headshot" class="pure-img-responsive profile-img">
                 <h1 class="brand-title">Sumedha Narayanan</h1>
                 <h2 class="brand-tagline">Full Stack Web Developer</h2>
                 <div class="social-media-icons">
@@ -103,10 +105,8 @@
                     </ul>                
                 </div>
             </section>
-        </div>
 
         <!-- Projects Post -->
-        <div class="posts">
             <h1 class="post-title" id="projects">Projects</h1>
             <!---->
             <section class="post">
@@ -114,28 +114,87 @@
                     <h6 class="content-subhead"></h6>
                 </header>
                 <div class="post-description">
-                    <table class="pure-table pure-table-bordered pure-table-horizontal">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Tech-Stack</th>
-                                <th>Summary</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><a href="https://github.com/sumedhan/smoothplanner" target="_blank">Smooth Planner</a></td>
-                                <td>React, React-router, Google Places API, Rails API, PostgreSQL</td>
-                                <td>Worked on a 3 member team to develop a full stack app that helps users organize their vacation. Learnt to use React Router, work with Rails as an API, work with Google places API.</td>
-                        </tr>
-                        </tbody>
-                    </table>
+                    <div class ="card-columns">
+                        <div class="card border border-dark" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Smooth Planner</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">
+                                    <i class="devicon-react-original-wordmark colored tech-stack-icon"></i> 
+                                    <i class="devicon-rails-plain-wordmark colored tech-stack-icon"></i>
+                                    <i class="devicon-postgresql-plain-wordmark colored tech-stack-icon"></i>
+                                </h6>
+                                <p class="card-text">Worked on a 3 member team to develop a full stack app that helps users organize their vacation.</p>
+                                <a href="https://github.com/sumedhan/smoothplanner" target="_blank" class="card-link">Github</a>
+                            </div>
+                        </div>
+                        <div class="card border border-dark" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Decision Maker</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">
+                                    <i class="devicon-jquery-plain-wordmark colored tech-stack-icon"></i>
+                                    <i class="devicon-express-original-wordmark colored tech-stack-icon"></i>
+                                    <i class="devicon-nodejs-plain-wordmark colored tech-stack-icon"></i>
+                                    <i class="devicon-postgresql-plain-wordmark colored tech-stack-icon"></i>
+                                    <i class="devicon-sass-original colored tech-stack-icon"></i>
+                                </h6>
+                                <p class="card-text">Part of a 3 member team to develop a full stack web app that helps groups of friends to vote on a preferred choice (using ranked voting)</p>
+                                <a href="https://github.com/sumedhan/decision-maker" target="_blank" class="card-link">Github</a>
+                            </div>
+                        </div>
+                        <div class="card border border-dark" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Chatty</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">
+                                    <i class="devicon-react-original-wordmark colored tech-stack-icon"></i> 
+                                    <i class="devicon-webpack-plain-wordmark colored tech-stack-icon"></i>
+                                    <i class="devicon-express-original-wordmark colored tech-stack-icon"></i>
+                                    <i class="devicon-babel-plain colored tech-stack-icon"></i>
+                                    <i class="devicon-sass-original colored tech-stack-icon"></i>
+                                </h6>
+                                <p class="card-text">A Single Page chat application using WebSockets for real time communication</p>
+                                <a href="https://github.com/sumedhan/chatty-app" target="_blank" class="card-link">Github</a>
+                            </div>
+                        </div>
+                        <div class="card border border-dark" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Tweeter</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">
+                                    <i class="devicon-jquery-plain-wordmark colored tech-stack-icon"></i>
+                                    <i class="devicon-express-original-wordmark colored tech-stack-icon"></i>
+                                    <i class="devicon-nodejs-plain-wordmark colored tech-stack-icon"></i>
+                                    <i class="devicon-mongodb-plain-wordmark colored tech-stack-icon"></i>
+                                </h6>
+                                <p class="card-text">A Single Page Twitter clone.</p>
+                                <a href="https://github.com/sumedhan/tweeter" target="_blank" class="card-link">Github</a>
+                            </div>
+                        </div>
+                        <div class="card border border-dark" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Countdown - React Native</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">
+                                    <i class="devicon-react-original-wordmark colored tech-stack-icon"></i> 
+                                </h6>
+                                <p class="card-text">A simple react native app that counts the days untill your event date.</p>
+                                <a href="https://github.com/sumedhan/countdown" target="_blank" class="card-link">Github</a>
+                            </div>
+                        </div>
+                        <div class="card border border-dark" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">TinyURL</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">
+                                    <i class="devicon-express-original-wordmark colored tech-stack-icon"></i>
+                                    <i class="devicon-nodejs-plain-wordmark colored tech-stack-icon"></i>
+                                </h6>
+                                <p class="card-text">A URL shortening app</p>
+                                <a href="https://github.com/sumedhan/countdown" target="_blank" class="card-link">Github</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-        </div>
 
         <!-- Beyond Coding Post -->
-        <div class="posts">
+    
             <h1 class="post-title" id="beyond-coding">Beyond Coding</h1>
             <!--Travelling-->
             <section class="post">
@@ -147,14 +206,13 @@
                         <div class="pure-u-1 pure-u-md-1-2 post-img">
                             <img alt="Masai Mara, Kenya" class="pure-img-responsive" src="img/kenya.JPG">
                             <div class="post-image-meta">
-                                <h3>With my family at Masai Mara, Kenya</h3>
+                                <h5>With my family at Masai Mara, Kenya</h5>
                             </div>
                         </div>
-
                         <div class="pure-u-1 pure-u-md-1-2 post-img">
                             <img alt="Driving around Havana, Cuba" class="pure-img-responsive" src="img/havana.JPG">
                                 <div class="post-image-meta">
-                                    <h3>Driving around Havana, Cuba</h3>
+                                    <h5>Driving around Havana, Cuba</h5>
                                 </div>
                         </div>
                     </div>
